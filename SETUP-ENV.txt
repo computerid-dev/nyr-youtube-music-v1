@@ -1,0 +1,6 @@
+Environment variable (opsional, link pin sudah tertanam sebagai default)
+
+Key: PIN_HOST
+Value: nyr-youtube-music-v1.vercel.app
+
+Catatan: kalau link pin berubah, ganti juga PIN_HOSTS di anti-clone.js.
