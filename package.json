@@ -1,0 +1,7 @@
+{
+  "name": "youtube-musik",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": { "start": "node youtube-musik/server.js" },
+  "dependencies": { "axios": "^1.7.0", "cheerio": "^1.0.0" }
+}
