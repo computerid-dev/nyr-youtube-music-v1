@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffd23f">
+  <title>YOUTUBE MUSIK</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="/anti-clone.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand">YOUTUBE MUSIK</h1>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="Cari lagu atau artis" aria-label="Cari lagu atau artis" autocomplete="off" required minlength="2">
+      <button type="submit" class="btn btn-primary">Cari</button>
+    </form>
+    <nav class="tabs" aria-label="Menu">
+      <button class="btn tab is-active" data-tab="home">Beranda</button>
+      <button class="btn tab" data-tab="favorites">Favorit</button>
+      <button class="btn tab" data-tab="queue">Antrean</button>
+    </nav>
+  </header>
+
+  <main class="content" id="content" aria-live="polite"></main>
+
+  <footer class="player" id="player" hidden>
+    <img class="player-cover" id="cover" alt="">
+    <div class="player-info">
+      <p class="player-title" id="nowTitle"></p>
+      <p class="player-artist" id="nowArtist"></p>
+    </div>
+    <div class="player-controls">
+      <button class="btn" id="prevBtn" aria-label="Lagu sebelumnya">Sebelum</button>
+      <button class="btn btn-primary" id="playBtn" aria-label="Putar atau jeda">Putar</button>
+      <button class="btn" id="nextBtn" aria-label="Lagu berikutnya">Lanjut</button>
+    </div>
+    <div class="player-seek">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Posisi lagu">
+      <span id="totalTime">0:00</span>
+    </div>
+    <audio id="audio" preload="none"></audio>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
